@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boot Cards</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mdb.css' %}">
+</head>
+<body class="bg-primary">
+    <center>
+        <h1 class="bg-success">CARDS</h1>
+    </center>
+    <div class="container-fluid mt-5 bg-success h-100">
+        <div class="row p-md-5">
+            <div class="col-md-3 ">
+                <div class="card h-75">
+                    <div class="card-header bg-danger h-75">
+                        <img src="{% static 'images/NATURE1.jpg' %}" alt="image not found" class="img-fluid h-100 w-100">
+                    </div>
+                    <div class="card-body bg-primary">hello</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-75">
+                    <div class="card-header bg-danger h-75">
+                        <img src="{% static 'images/Nature2.jpg' %}" alt="Image NOt Found" class="img-fluid h-100 w-100">
+                    </div>
+                    <div class="card-body bg-primary">hello</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-75">
+                    <div class="card-header bg-danger h-75">
+                        <img src="{% static 'images/Nature3.jpg' %}" alt="Image NOt Found" class="img-fluid h-100 w-100">
+                    </div>
+                    <div class="card-body bg-primary">hello</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-75">
+                    <div class="card-header bg-danger h-75">
+                        <img src="{% static 'images/Nature4.jpg' %}" alt="Image NOt Found" class="img-fluid h-100 w-100">
+                    </div>
+                    <div class="card-body bg-primary">hello</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+    <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+    <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+    <a href="{% url 'app1:table' %}"><button>Table</button></a>
+    <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+    <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+    <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+    <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+    <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+</body>
+</html>

@@ -1,0 +1,48 @@
+*
+{
+    margin: 0px;
+}
+header
+{
+    background-color: black;
+    color: white;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+header h1
+{
+    margin: 10px;
+}
+header>h1>span
+{
+    color: orange;
+    font-size: 50px;
+    border: 2px solid orangered;
+    border-radius: 0px 10px 0px 10px;
+    padding:10px;
+}
+header a
+{
+    color: antiquewhite;
+    text-decoration: none;
+    margin: 10px;
+}
+#one
+{
+    background: aquamarine url(../../PIC/business.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+#two
+{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#

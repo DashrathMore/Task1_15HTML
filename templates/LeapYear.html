@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leap Year</title>
+    
+</head>
+<body>
+    <h1>Leap Year</h1>
+    <script>
+        function year()
+        {
+            let yer =prompt('enter year')
+            if ((yer%100==0) && (yer%400==0))
+            {
+                console.log('The Century year is leap year'+yer);
+            }
+            else if ((yer%100!=0) && (yer%4==0))
+            {
+                console.log('The normal year is leap :'+yer);
+            }
+            else
+            {
+                console.log('Year is not leap :'+yer);
+            }
+        }
+        year();
+    </script>
+</body>
+</html>

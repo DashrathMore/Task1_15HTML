@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>METRIMONIAL</h1>
+    <table border="10px" cellspacing="5px" cellpadding="10px">
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>SALARY</th>
+            <th>IMAGES</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>DASHRATH</td>
+            <td>23</td>
+            <td>100000</td>
+            <td><img src="{% static 'images/da.jpg' %}" height="350px" width="250px"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>VIRAT</td>
+            <td>34</td>
+            <td>1000000</td>
+            <td><img src="{% static 'images/virat1.jpg' %}" height="250px" width="250px"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ROHIT</td>
+            <td>34</td>
+            <td>10000000</td>
+            <td><img src="{% static 'images/ro2.jpg' %}" height="250px" width="250px"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>DHONI</td>
+            <td>41</td>
+            <td>10000000</td>
+            <td><img src="{% static 'images/msd1.jpg' %}" height="250px" width="250px"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>YUVARAJ</td>
+            <td>45</td>
+            <td>10000000</td>
+            <td><img src="{% static 'images/yv4.jpg' %}" height="250px" width="250px"></td>
+        </tr>
+    </table>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+    <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+    <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+    <a href="{% url 'app1:table' %}"><button>Table</button></a>
+    <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+    <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+    <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+    <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+    <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table 1</title>
+</head>
+<body>
+    <table border="2px" align="center">
+        <tr>
+            <td rowspan="4"> This is a paragraph about me, Ian! <br> This is another paragraph about me, Ian!</td>
+            <th colspan="2">RANDOM NAMES</th>
+        </tr>
+        <tr>
+            <td>j. Doe</td>
+            <td>p. Day</td>
+        </tr>
+        <tr>
+            <td>R. Bob</td>
+            <td>T. Sam</td>
+        </tr>
+        <tr>
+            <td colspan="2"> CONTACT ME FOR DETAILS</td>
+        </tr>
+        <tr>
+            <td><h4> FREE SOFTWARE </h4><br> 1. Linux <br> 2. Apache <br> 3. MySQL <br> 4. PHP</td>
+            <td colspan="2"><h3>HELLO</h3></td>
+        </tr>
+    </table>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+    <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+    <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+    <a href="{% url 'app1:table' %}"><button>Table</button></a>
+    <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+    <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+    <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+    <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+    <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+</body>
+</html>

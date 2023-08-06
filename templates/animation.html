@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        div
+        {
+            top: 300px;
+            left: 300px;
+            position: relative;
+        }
+        div>span
+        {
+            background-color: brown;
+            height: 50px;
+            width:50px;
+            display: inline-block;
+            margin: 40px;
+            box-shadow: 0 0 20px white;
+            border-radius: 100px;
+            animation:kalu 1s linear 0s infinite normal;   
+        }
+        div>span:first-child
+        {
+            background-color: blue;
+            animation-delay: 0.55;
+        }
+        div>span:nth-child(2)
+        {
+            background-color: red;
+            animation-delay: 0.11s;
+        }
+        div>span:nth-child(2)
+        {
+            background-color: brown;
+            animation-delay: 0.33s;
+        }
+        div>span:nth-child(3)
+        {
+            background-color: green;
+            animation-delay: 0.22s;
+        }
+        div>span:nth-child(4)
+        {
+            background-color: yellow;
+            animation-delay: 0.9s;
+        }
+        div>span:nth-child(5)
+        {
+            background-color: violet;
+            animation-delay: 0.33s;
+        }
+        div>span:nth-child(6)
+        {
+            background-color: gold;
+            animation-delay: 0.11s;
+        }
+        div>span:last-child
+        {
+            background-color: aqua;
+            animation-delay: 0.55s;
+        }
+        @keyframes kalu
+        {
+            0%,100%
+            {
+               /* transform: translateY(-100px); */
+                transform:scale(0.10,0.10);
+            }
+            50%
+            {
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <center style="margin-top: 200px;">
+            <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+        <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+        <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+        <a href="{% url 'app2:login2' %}"><button>login2</button></a>
+        <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+        <a href="{% url 'app2:card' %}"><button>Card</button></a>
+        <a href="{% url 'app1:table' %}"><button>Table</button></a>
+        <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+        <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+        <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+        <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+        <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+        </center>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TABLE 2</title>
+</head>
+<body>
+    <table border="5px" cellspacing="4px" cellpadding="10px">
+        <tr>
+            <th rowspan="2">HEADING</th>
+            <th>STUDENTS</th>
+            <th colspan="3"> DETAILS</th>    
+        </tr>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>DEPARTMENT</th>
+            <th>ROLL NUMBER</th>
+        </tr>
+        <tr>
+            <td rowspan="4"> Student List</td>
+            <td>1</td>
+            <td>Victor</td>
+            <td>Computer Science</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Electronics</td>
+            <td>23456</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</td>
+            <td>Electrical</td>
+            <td>34567</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Rick</td>
+            <td>Civil</td>
+            <td>45678</td>
+        </tr>
+    </table>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+    <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+    <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+    <a href="{% url 'app1:table' %}"><button>Table</button></a>
+    <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+    <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+    <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+    <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+    <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+</body>
+</html>

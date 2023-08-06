@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Table1</title>
+</head>
+<body>
+    <table border="2px" align="center">
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2">AVERAGE</th>
+            <th rowspan="2"> RED EYES</th>
+        </tr>
+        <tr>
+            <th>HEIGHT</th>
+            <th>WEIGHT</th>
+        </tr>
+        <tr>
+            <th>MALES</th>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <th>FEAMALES</th>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+    <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+    <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+    <a href="{% url 'app1:home' %}"><button>Home</button></a>
+    <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+    <a href="{% url 'app1:table' %}"><button>Table</button></a>
+    <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+    <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+    <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+    <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+    <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+</body>
+</html>

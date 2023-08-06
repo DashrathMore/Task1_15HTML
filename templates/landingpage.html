@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="{% static 'css/all.css' %}">
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+</head>
+<body>
+    <header>
+        <h1><span>D</span>ash<span>P</span>rime</h1>
+        <div>
+            <a href=""><i class="fa fa-home"></i> Home</a>
+            <a href=""><i class="fa fa-comment"></i> Updates</a>
+            <a href=""><i class="fa-brands fa-adn"></i> About</a>
+            <a href=""><i class="fa-brands fa-hire-a-helper"></i> Help</a>
+        </div>
+    </header>
+    <div id="one">
+        <div id="two">
+            <h1>Best Company</h1>
+            <p>the fact or condition of being with another or others, especially in a way that provides friendship and enjoyment. <br>associate with; keep company with.
+               <br> "these men which have companied with us all this time" <br>A company, abbreviated as co., is a legal entity representing an association of people, whether natural, legal or a mixture of both, with a specific objective. Company members share a common purpose and unite to achieve specific, declared goals. Companies take various forms.ect.
+            <br><button>Register</button></p>
+        </div>
+        <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+        <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+        <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+        <a href="{% url 'app2:login2' %}"><button>login2</button></a>
+        <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+        <a href="{% url 'app2:card' %}"><button>Card</button></a>
+        <a href="{% url 'app1:table' %}"><button>Table</button></a>
+        <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+        <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+        <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+        <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+        <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+    </div>
+</body>
+</html>

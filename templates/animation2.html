@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation 2</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        div
+        {
+            height: 100px;
+            width: 100px;
+            background: linear-gradient(45deg,red,brown,orange,violet);
+            position: relative;
+            animation: golu 4s linear 0s infinite normal;
+        }
+        @keyframes golu
+        {
+            0%
+            {
+                top: 3000px;
+                left:0px;
+            }
+            10%
+            {
+                top:100px;
+                left:100px;
+            }
+            20%
+            {
+                top:500px;
+                left:200px;
+            }
+            30%
+            {
+                top:200px;
+                left:300px;
+            }
+            40%
+            {
+                top:500px;
+                left:400px;
+            }
+            50%
+            {
+                top:200px;
+                left:500px;
+            }
+            60%
+            {
+                top:500px;
+                left:600px;
+            }
+            70%
+            {
+                top:200px;
+                left:700px;
+            }
+            80%
+            {
+                top:500px;
+                left:800px;
+            }
+            90%
+            {
+                top:200px;
+                left:900px;
+            }
+            100%
+            {
+                top:500px;
+                left: 1000px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <a href="{% url 'app3:animation' %}"><button>animation</button></a>
+        <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+        <a href="{% url 'app2:login1' %}"><button>login1</button></a>
+        <a href="{% url 'app2:login2' %}"><button>login2</button></a>
+        <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+        <a href="{% url 'app2:card' %}"><button>Card</button></a>
+        <a href="{% url 'app1:table' %}"><button>Table</button></a>
+        <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+        <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+        <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+        <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+        <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+    <div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOG IN</title>
+    <style>
+        div
+        {
+            background-color: burlywood;
+            width: 500px;
+            margin: 100px auto;
+            border: 5px solid black;
+        }
+        form
+        {
+            align-items: center;
+            padding: 10px 50px;
+            
+        }
+        h1
+        {
+            padding: 10px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>EDIT YOUR DETAILS</h1>
+    <form>
+        <table>
+        <tr>
+            <td><label>Username :</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Password :</label></td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td><label>Full Name :</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Emali :</label></td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td><label>Phone Number :</label></td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Hotel Branch</label></td>
+            <td><select>
+                <option>...SELECT...</option>
+                <option>Marthahalli</option>
+                <option>Electric City</option>
+                <option>White City</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="Submit" value="Update">
+                <input type="reset" value="Delete">
+            </td>
+        </tr>
+    </table>
+    </form>
+    <a href="{% url 'app3:animation2' %}"><button>animation2</button></a>
+        <a href="{% url 'app3:animation3' %}"><button>animation3</button></a>
+        <a href="{% url 'app1:home' %}"><button>Home</button></a>
+        <a href="{% url 'app2:login2' %}"><button>login2</button></a>
+        <a href="{% url 'app2:login3' %}"><button>login3</button></a>
+        <a href="{% url 'app2:card' %}"><button>Card</button></a>
+        <a href="{% url 'app1:table' %}"><button>Table</button></a>
+        <a href="{% url 'app1:table1' %}"><button>Table1</button></a>
+        <a href="{% url 'app1:table2' %}"><button>table2</button></a>
+        <a href="{% url 'app1:table3' %}"><button>Table3</button></a>
+        <a href="{% url 'app1:table4' %}"><button>Table4</button></a>
+        <a href="{% url 'app1:table5' %}"><button>table5</button></a>
+    </div>
+</body>
+</html>
